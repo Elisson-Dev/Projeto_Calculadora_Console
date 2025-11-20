@@ -1,22 +1,29 @@
 /// Esse arquivo é a tela de informação do desenvolvedor do Software
 /// Criado     em 15/11/2025 por Elisson-Dev (elss)
-/// Atualizado em 15/11/2025 por Elisson-Dev (elss)
-/// Versão do arquivo: 1
+/// Atualizado em 20/11/2025 por Elisson-Dev (elss)
+/// Versão do arquivo: 2
 
 import 'dart:io' as principal;
-import '../lib/mensagens.dart' as msn;
-import '../lib/tela_menu.dart' as menu;
-import '../lib/ferramenta_interna.dart' as auxiliar;
+import 'mensagens.dart';
+import 'tela_menu.dart';
+import 'ferramenta_interna.dart';
 
-void sobre() {
-  msn.sobreSoftware();
+class TelaSobre {
+  //instanciando objetos
+  Mensagens msn = Mensagens();
+  TelaMenu menu = TelaMenu();
+  FerramentaInterna auxiliar = FerramentaInterna();
 
-  msn.retornoMenu();
-  var retorno = principal.stdin.readLineSync();
+  void sobre() {
+    msn.sobreSoftware();
 
-  if (retorno == 's') {
-    menu.menu();
-  } else {
-    auxiliar.limparTela();
+    msn.retornoMenu();
+    var retorno = principal.stdin.readLineSync();
+
+    if (retorno == 's') {
+      menu.menu();
+    } else {
+      auxiliar.limparTela();
+    }
   }
 }

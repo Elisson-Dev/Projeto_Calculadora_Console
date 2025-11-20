@@ -1,19 +1,25 @@
 /// Esse arquivo possui as informações de como usar o programa
 /// Criado     em 15/11/2025 por Elisson-Dev (elss)
-/// Atualizado em 15/11/2025 por Elisson-Dev (elss)
-/// Versão do arquivo: 1
+/// Atualizado em 20/11/2025 por Elisson-Dev (elss)
+/// Versão do arquivo: 2
 
 import 'dart:io' as principal;
-import '../lib/mensagens.dart' as msn;
-import '../lib/tela_menu.dart' as menu;
+import 'mensagens.dart';
+import 'tela_menu.dart';
 
-void ajuda() {
-  msn.informacoes();
+class TelaManual {
+  void ajuda() {
+    // Instanciamento de objeto
+    var msn = new Mensagens();
+    var menu = new TelaMenu();
 
-  msn.retornoMenu();
-  var retorno = principal.stdin.readLineSync();
+    msn.informacoes();
 
-  if (retorno == 's') {
-    menu.menu();
+    msn.retornoMenu();
+    var retorno = principal.stdin.readLineSync();
+
+    if (retorno == 's') {
+      menu.menu();
+    }
   }
 }

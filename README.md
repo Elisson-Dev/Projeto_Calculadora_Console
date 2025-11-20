@@ -1,6 +1,13 @@
 # Projeto_Calculadora_Console
 Uma calculadora contruída no puro Dart que tem como missão a evolução contínua das próprias funções.
 
+## Features (V. 0.0.2) - 20/11/2025
+
+1 - Transformação de módulos em Classes (OO);
+
+2 - Estabelecimento de métodos e atributos;
+
+
 ## Features (V. 0.0.1) - 15/11/2025
 
 1 - Operações de Soma, Subtração, Multiplicação e Divisão;
