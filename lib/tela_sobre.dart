@@ -11,7 +11,6 @@ import 'ferramenta_interna.dart';
 class TelaSobre {
   //instanciando objetos
   Mensagens msn = Mensagens();
-  TelaMenu menu = TelaMenu();
   FerramentaInterna auxiliar = FerramentaInterna();
 
   void sobre() {
@@ -21,7 +20,7 @@ class TelaSobre {
     var retorno = principal.stdin.readLineSync();
 
     if (retorno == 's') {
-      menu.menu();
+      new TelaMenu().menu();
     } else {
       auxiliar.limparTela();
     }

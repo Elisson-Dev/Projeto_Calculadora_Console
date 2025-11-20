@@ -14,9 +14,6 @@ class TelaMenu {
   // instancia as classes
   FerramentaInterna auxiliar = FerramentaInterna();
   Mensagens msn = Mensagens();
-  Motor motor = Motor();
-  TelaManual manual = TelaManual();
-  TelaSobre sobre = TelaSobre();
 
   void menu() {
     // Variável pra garantir ausência de erro no loop de menu
@@ -37,18 +34,18 @@ class TelaMenu {
       switch (opcao) {
         case 1:
           auxiliar.limparTela();
+          new Motor().motor();
           condicao = false;
-          motor.motor();
           break;
         case 2:
           auxiliar.limparTela();
+          new TelaManual().ajuda();
           condicao = false;
-          manual.ajuda();
           break;
         case 3:
           auxiliar.limparTela();
+          new TelaSobre().sobre();
           condicao = false;
-          sobre.sobre();
           break;
         case 4:
           auxiliar.limparTela();

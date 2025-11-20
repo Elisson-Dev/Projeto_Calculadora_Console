@@ -11,7 +11,6 @@ class TelaManual {
   void ajuda() {
     // Instanciamento de objeto
     var msn = new Mensagens();
-    var menu = new TelaMenu();
 
     msn.informacoes();
 
@@ -19,7 +18,7 @@ class TelaManual {
     var retorno = principal.stdin.readLineSync();
 
     if (retorno == 's') {
-      menu.menu();
+      new TelaMenu().menu();
     }
   }
 }

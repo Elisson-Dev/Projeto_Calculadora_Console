@@ -17,7 +17,6 @@ class Motor {
     // Instanciamento de objeto
     var auxiliar = new FerramentaInterna();
     var msn = new Mensagens();
-    var menu = new TelaMenu();
     var soma = new OperacaoSoma();
     var subtracao = new OperacaoSubtracao();
     var multiplicacao = new OperacaoMultiplicacao();
@@ -83,7 +82,7 @@ class Motor {
       case '1':
         break;
       case '2':
-        menu.menu();
+        new TelaMenu().menu();
         break;
       case '3':
         motor();

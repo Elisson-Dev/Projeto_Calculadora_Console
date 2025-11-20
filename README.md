@@ -7,6 +7,8 @@ Uma calculadora contruída no puro Dart que tem como missão a evolução contí
 
 2 - Estabelecimento de métodos e atributos;
 
+3 - Correção de bugs;
+
 
 ## Features (V. 0.0.1) - 15/11/2025
 
